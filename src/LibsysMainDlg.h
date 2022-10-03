@@ -15,7 +15,7 @@
 class TMainForm : public TForm
 {
 __published:	// IDE-managed Components
-	TPanel *Panel1;
+	TPanel *ClientPanel;
 	TMainMenu *MainMenu;
 	TMenuItem *BookItem;
 	TMenuItem *stem;
@@ -27,6 +27,9 @@ __published:	// IDE-managed Components
 	TMenuItem *AccessItem;
 	TMenuItem *CustomerInfoItem;
 	TMenuItem *MembershipItem;
+	TMenuItem *DevInfoItem;
+	TMenuItem *ErrorStatusItem;
+	TMenuItem *LicenseItem;
 private:	// User declarations
 public:		// User declarations
 	__fastcall TMainForm(TComponent* Owner);

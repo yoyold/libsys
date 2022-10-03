@@ -2,8 +2,8 @@ object MainForm: TMainForm
   Left = 0
   Top = 0
   Caption = 'Libsys'
-  ClientHeight = 624
-  ClientWidth = 928
+  ClientHeight = 73
+  ClientWidth = 392
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -14,14 +14,16 @@ object MainForm: TMainForm
   OldCreateOrder = False
   PixelsPerInch = 96
   TextHeight = 13
-  object Panel1: TPanel
+  object ClientPanel: TPanel
     Left = 0
     Top = 0
-    Width = 928
-    Height = 624
+    Width = 392
+    Height = 73
     Align = alClient
     ShowCaption = False
     TabOrder = 0
+    ExplicitWidth = 700
+    ExplicitHeight = 71
   end
   object MainMenu: TMainMenu
     Left = 48
@@ -46,6 +48,9 @@ object MainForm: TMainForm
       object AccessItem: TMenuItem
         Caption = 'Access Management'
       end
+      object LicenseItem: TMenuItem
+        Caption = 'License'
+      end
       object Statistics: TMenuItem
         Caption = 'Statistics'
       end
@@ -55,6 +60,12 @@ object MainForm: TMainForm
     end
     object AboutItem: TMenuItem
       Caption = 'About'
+      object DevInfoItem: TMenuItem
+        Caption = 'Development'
+      end
+      object ErrorStatusItem: TMenuItem
+        Caption = 'Error Status'
+      end
     end
   end
 end
