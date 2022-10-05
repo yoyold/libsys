@@ -22,14 +22,13 @@ object MainForm: TMainForm
     Align = alClient
     ShowCaption = False
     TabOrder = 0
-    ExplicitWidth = 700
-    ExplicitHeight = 71
   end
   object MainMenu: TMainMenu
     Left = 48
     Top = 16
     object BookItem: TMenuItem
       Caption = 'Books'
+      OnClick = BookItemClick
     end
     object stem: TMenuItem
       Caption = 'Customers'

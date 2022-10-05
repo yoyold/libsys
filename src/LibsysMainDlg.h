@@ -30,6 +30,7 @@ __published:	// IDE-managed Components
 	TMenuItem *DevInfoItem;
 	TMenuItem *ErrorStatusItem;
 	TMenuItem *LicenseItem;
+	void __fastcall BookItemClick(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
 	__fastcall TMainForm(TComponent* Owner);
