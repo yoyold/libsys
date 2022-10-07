@@ -35,6 +35,9 @@ object MainForm: TMainForm
       object CustomerInfoItem: TMenuItem
         Caption = 'Information'
       end
+      object LendingsItem: TMenuItem
+        Caption = 'Lendings'
+      end
       object MembershipItem: TMenuItem
         Caption = 'Memberships'
       end

@@ -27,17 +27,16 @@ object BookManagerFrm: TBookManagerFrm
     ParentFont = False
     ShowCaption = False
     TabOrder = 0
-    ExplicitLeft = 1
     object BookTitleLbl: TLabel
-      Left = 267
+      Left = 261
       Top = 50
       Width = 24
       Height = 13
       Caption = 'Title:'
     end
     object ISBNLbl: TLabel
-      Left = 267
-      Top = 84
+      Left = 261
+      Top = 85
       Width = 27
       Height = 13
       Caption = 'ISBN:'
@@ -48,6 +47,21 @@ object BookManagerFrm: TBookManagerFrm
       Width = 27
       Height = 13
       Caption = 'Tags:'
+    end
+    object Label1: TLabel
+      Left = 372
+      Top = 151
+      Width = 15
+      Height = 13
+      AutoSize = False
+      Caption = '/'
+    end
+    object AvailabilityLbl: TLabel
+      Left = 250
+      Top = 152
+      Width = 58
+      Height = 13
+      Caption = 'Availability: '
     end
     object AddBookBtn: TBitBtn
       Left = 8
@@ -124,11 +138,34 @@ object BookManagerFrm: TBookManagerFrm
       Text = '   - -     -   - '
     end
     object BookTagsMemo: TMemo
-      Left = 210
+      Left = 203
       Top = 191
       Width = 337
       Height = 89
       TabOrder = 6
+    end
+    object EditModeCheckBox: TCheckBox
+      Left = 8
+      Top = 424
+      Width = 97
+      Height = 17
+      Caption = 'Read only'
+      TabOrder = 7
+      OnClick = EditModeCheckBoxClick
+    end
+    object AvailableNumberBox: TNumberBox
+      Left = 314
+      Top = 148
+      Width = 47
+      Height = 21
+      TabOrder = 8
+    end
+    object TotalStockNumberBox: TNumberBox
+      Left = 388
+      Top = 148
+      Width = 47
+      Height = 21
+      TabOrder = 9
     end
   end
 end

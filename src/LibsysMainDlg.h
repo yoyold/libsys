@@ -30,6 +30,7 @@ __published:	// IDE-managed Components
 	TMenuItem *DevInfoItem;
 	TMenuItem *ErrorStatusItem;
 	TMenuItem *LicenseItem;
+	TMenuItem *LendingsItem;
 	void __fastcall BookItemClick(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
