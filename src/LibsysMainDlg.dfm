@@ -67,6 +67,7 @@ object MainForm: TMainForm
       end
       object ErrorStatusItem: TMenuItem
         Caption = 'Error Status'
+        OnClick = ErrorStatusItemClick
       end
     end
   end

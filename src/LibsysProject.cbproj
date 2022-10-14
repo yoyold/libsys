@@ -160,6 +160,12 @@
             <DependentOn>DBManager.h</DependentOn>
             <BuildOrder>2</BuildOrder>
         </CppCompile>
+        <CppCompile Include="Exceptionlog.cpp">
+            <Form>ExceptionLogFrm</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>Exceptionlog.h</DependentOn>
+            <BuildOrder>4</BuildOrder>
+        </CppCompile>
         <CppCompile Include="LibsysMainDlg.cpp">
             <Form>MainForm</Form>
             <FormType>dfm</FormType>
@@ -171,6 +177,7 @@
         </CppCompile>
         <FormResources Include="LibsysMainDlg.dfm"/>
         <FormResources Include="BookManagerDlg.dfm"/>
+        <FormResources Include="Exceptionlog.dfm"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>
@@ -208,32 +215,14 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="$(BDS)\Redist\Win32\VclSmp270.fr" Configuration="Debug" Class="DependencyPackageResource">
-                    <Platform Name="Win32">
-                        <RemoteName>VclSmp270.fr</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="$(BDS)\Redist\Win32\VclSmp270.ja" Configuration="Debug" Class="DependencyPackageResource">
-                    <Platform Name="Win32">
-                        <RemoteName>VclSmp270.ja</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
                 <DeployFile LocalName="$(BDS)\Redist\Win32\rtl270.bpl" Configuration="Debug" Class="DependencyPackage">
                     <Platform Name="Win32">
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="$(BDS)\Redist\Win32\rtl270.ja" Configuration="Debug" Class="DependencyPackageResource">
-                    <Platform Name="Win32">
-                        <RemoteName>rtl270.ja</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="$(BDS)\Redist\Win32\VclSmp270.de" Configuration="Debug" Class="DependencyPackageResource">
-                    <Platform Name="Win32">
-                        <RemoteName>VclSmp270.de</RemoteName>
+                <DeployFile LocalName=".\Win64\Debug\LibsysProject.exe" Configuration="Debug" Class="ProjectOutput">
+                    <Platform Name="Win64">
+                        <RemoteName>LibsysProject.exe</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -257,39 +246,14 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="$(BDS)\Redist\Win32\vclx270.ja" Configuration="Debug" Class="DependencyPackageResource">
-                    <Platform Name="Win32">
-                        <RemoteName>vclx270.ja</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
                 <DeployFile LocalName=".\Win32\Debug\LibsysProject.exe" Configuration="Debug" Class="ProjectOutput">
                     <Platform Name="Win32">
                         <RemoteName>LibsysProject.exe</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="$(BDS)\Redist\Win32\vcl270.fr" Configuration="Debug" Class="DependencyPackageResource">
+                <DeployFile Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'!='true'" LocalName="$(BDS)\bin\cc32c270.dll" Class="DependencyModule">
                     <Platform Name="Win32">
-                        <RemoteName>vcl270.fr</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="$(BDS)\Redist\Win32\vclx270.fr" Configuration="Debug" Class="DependencyPackageResource">
-                    <Platform Name="Win32">
-                        <RemoteName>vclx270.fr</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="$(BDS)\Redist\Win32\rtl270.fr" Configuration="Debug" Class="DependencyPackageResource">
-                    <Platform Name="Win32">
-                        <RemoteName>rtl270.fr</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="$(BDS)\Redist\Win32\vcl270.ja" Configuration="Debug" Class="DependencyPackageResource">
-                    <Platform Name="Win32">
-                        <RemoteName>vcl270.ja</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -323,37 +287,8 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'!='true'" LocalName="$(BDS)\bin\cc32c270.dll" Class="DependencyModule">
-                    <Platform Name="Win32">
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="$(BDS)\Redist\Win32\vclx270.de" Configuration="Debug" Class="DependencyPackageResource">
-                    <Platform Name="Win32">
-                        <RemoteName>vclx270.de</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="$(BDS)\Redist\Win32\rtl270.de" Configuration="Debug" Class="DependencyPackageResource">
-                    <Platform Name="Win32">
-                        <RemoteName>rtl270.de</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="$(BDS)\Redist\Win32\vcl270.de" Configuration="Debug" Class="DependencyPackageResource">
-                    <Platform Name="Win32">
-                        <RemoteName>vcl270.de</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
                 <DeployFile LocalName="$(BDS)\Redist\Win32\VclSmp270.bpl" Configuration="Debug" Class="DependencyPackage">
                     <Platform Name="Win32">
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName=".\Win32\Debug\LibsysProject.tds" Configuration="Debug" Class="DebugSymbols">
-                    <Platform Name="Win32">
-                        <RemoteName>LibsysProject.tds</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
