@@ -10,11 +10,8 @@ object ExceptionLogFrm: TExceptionLogFrm
   Font.Height = -11
   Font.Name = 'Tahoma'
   Font.Style = []
-<<<<<<< HEAD
   OldCreateOrder = False
   PixelsPerInch = 96
-=======
->>>>>>> hotfix/bookmanager-vcl-reference
   TextHeight = 13
   object ExceptionLogMemo: TMemo
     Left = 0
