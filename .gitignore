@@ -31,3 +31,7 @@
 *.out
 *.app
 src/__history/
+
+# other CPP-Builder files
+*.map
+*.local
