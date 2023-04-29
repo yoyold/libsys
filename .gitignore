@@ -35,3 +35,13 @@ src/__history/
 # other CPP-Builder files
 *.map
 *.local
+/src/Win32/Debug/LibsysProject.#00
+/src/Win32/Debug/LibsysProject.ilc
+/src/Win32/Debug/LibsysProject.ild
+/src/Win32/Debug/LibsysProject.ilf
+/src/Win32/Debug/LibsysProject.ils
+/src/Win32/Debug/LibsysProject.map
+/src/Win32/Debug/LibsysProject.pdi
+/src/Win32/Debug/LibsysProject.tds
+/src/Win64/Debug/LibsysProject.map
+/src/Win64/Debug/LibsysProject.pdi
