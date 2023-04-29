@@ -16,7 +16,11 @@ class TExceptionLogFrm : public TForm
 __published:	// IDE-managed Components
     TMemo *ExceptionLogMemo;
 private:	// User declarations
+<<<<<<< HEAD
 	void displayLogFile(const std::string& filename);
+=======
+	void displayLogFile(const std::string& filename, TMemo* memo) const;
+>>>>>>> hotfix/bookmanager-vcl-reference
 public:		// User declarations
     __fastcall TExceptionLogFrm(TComponent* Owner);
 };
