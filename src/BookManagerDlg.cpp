@@ -22,11 +22,11 @@ void __fastcall TBookManagerFrm::AddBookBtnClick(TObject *Sender)
 // toggle read-only for all UI elements
 void __fastcall TBookManagerFrm::EditModeCheckBoxClick(TObject *Sender)
 {
-	BookNameEdit->ReadOnly 		  = EditModeCheckBox->Checked;
-	ISBNMaskEdit->ReadOnly 		  = EditModeCheckBox->Checked;
-	AvailableNumberBox->ReadOnly  = EditModeCheckBox->Checked;
-	TotalStockNumberBox->ReadOnly = EditModeCheckBox->Checked;
-	BookTagsMemo->ReadOnly 		  = EditModeCheckBox->Checked;
+    BookNameEdit->ReadOnly        = EditModeCheckBox->Checked;
+    ISBNMaskEdit->ReadOnly        = EditModeCheckBox->Checked;
+    AvailableNumberBox->ReadOnly  = EditModeCheckBox->Checked;
+    TotalStockNumberBox->ReadOnly = EditModeCheckBox->Checked;
+    BookTagsMemo->ReadOnly        = EditModeCheckBox->Checked;
 }
 //---------------------------------------------------------------------------
 
