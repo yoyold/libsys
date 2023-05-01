@@ -1,0 +1,17 @@
+--
+-- Text encoding used: System
+--
+PRAGMA foreign_keys = off;
+BEGIN TRANSACTION;
+
+-- Table: books
+CREATE TABLE IF NOT EXISTS books (ROWID INTEGER PRIMARY KEY ASC AUTOINCREMENT NOT NULL UNIQUE, ISBN TEXT UNIQUE NOT NULL, Title TEXT, Author TEXT, Release_Date TEXT, Added_Date TEXT, Available_Count INTEGER, Total_Count INTEGER, Tags BLOB);
+
+-- Table: customers
+CREATE TABLE IF NOT EXISTS customers (ROWID INTEGER PRIMARY KEY ASC AUTOINCREMENT UNIQUE NOT NULL, customer_id INTEGER UNIQUE NOT NULL, name TEXT, first_name TEXT, join_date TEXT, premium INTEGER);
+
+-- Table: sysconfig
+CREATE TABLE IF NOT EXISTS sysconfig (ROWID INTEGER PRIMARY KEY ASC AUTOINCREMENT, Node TEXT UNIQUE, Value NUMERIC, Active INTEGER);
+
+COMMIT TRANSACTION;
+PRAGMA foreign_keys = on;
