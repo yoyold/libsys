@@ -7,8 +7,8 @@
 #include <Vcl.Styles.hpp>
 #include <Vcl.Themes.hpp>
 USEFORM("LibsysMainDlg.cpp", MainForm);
-USEFORM("BookManagerDlg.cpp", BookManagerFrm);
 USEFORM("Exceptionlog.cpp", ExceptionLogFrm);
+USEFORM("BookManagerDlg.cpp", BookManagerFrm);
 //---------------------------------------------------------------------------
 int WINAPI _tWinMain(HINSTANCE, HINSTANCE, LPTSTR, int)
 {
@@ -18,8 +18,8 @@ int WINAPI _tWinMain(HINSTANCE, HINSTANCE, LPTSTR, int)
         Application->MainFormOnTaskBar = true;
         TStyleManager::TrySetStyle("Iceberg Classico");
         Application->CreateForm(__classid(TMainForm), &MainForm);
-        Application->CreateForm(__classid(TExceptionLogFrm), &ExceptionLogFrm);
-        Application->Run();
+		Application->CreateForm(__classid(TExceptionLogFrm), &ExceptionLogFrm);
+		Application->Run();
     }
     catch (Exception &exception)
     {
