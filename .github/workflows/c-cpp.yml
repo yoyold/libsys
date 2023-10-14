@@ -13,6 +13,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    - name: autoreconf -i
+      run: autoreconf -i
     - name: configure
       run: ./configure
     - name: make
@@ -21,3 +23,6 @@ jobs:
       run: make check
     - name: make distcheck
       run: make distcheck
+    - name: make install
+      run: make install
+  
